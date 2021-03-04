@@ -1,3 +1,10 @@
 export default {
-	singular: true
+	singular: true,
+	routes: [
+		{
+			path: '/',
+			component: '../layout',
+			routes: [ { path: 'helloworld', component: './HelloWorld' } ]
+		}
+	]
 };
